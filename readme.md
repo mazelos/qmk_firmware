@@ -35,3 +35,11 @@ QMK is developed and maintained by Jack Humbert of OLKB with contributions from 
 ## Official Website
 
 [qmk.fm](https://qmk.fm) is the official website of QMK, where you can find links to this page, the documentation, and the keyboards supported by QMK.
+
+## Compile and flash kdbfan keyboard
+current layout: kbd75_rev2_my
+
+* edit layout: go in `$HOME/qmk_firmware/keyboards/kbdfans/kbd75/keymaps/[layout]`.
+* compile layout: `qmk compile -kb kbdfans/kbd75/rev2 -km [layout]`.
+* connect keyboard in DFU mode: hold for 1 sec `SPACE` + `B` while connecting to pc.
+* flash layout: `qmk flash -kb kbdfans/kbd75/rev2 -km [layout]`.
